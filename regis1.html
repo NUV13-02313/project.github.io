@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rigister page</title>
+<style>
+  /* Reset styles */
+  * {
+    box-sizing: border-box;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  height: 1.5rem;
+  background-color: rgb(157, 176, 247);
+}
+.navbar a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(vecteezyschool_supplies_outline_seamless-backgroundSS0422_generated.jpg);
+
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0px;
+  }
+
+ 
+  .left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    color: rgb(255, 240, 240);
+    
+    
+    
+  }
+
+  /* Right Panel */
+  .right-panel {
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+
+  .rigistration-form {
+    background-color: #a1abec;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .rigistration-form h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #000000;
+  }
+
+  .rigistration-form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: #000000;
+  }
+
+  .rigistration-form input[type="text"],
+  .rigistration-form input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    
+    transition: transform 0.3s ease;
+    
+  }
+
+  .rigistration-form input[type="text"]:hover,
+  .rigistration-form input[type="password"]:hover {
+    transform: scale(1.1);
+  }
+
+  .rigistration-form .forgot {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #000000;
+    margin-bottom: 1.7rem;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+
+  .rigistration-form .forgot:hover {
+    color: #a36beb;
+    text-decoration: underline;
+  }
+
+  .rigistration-form button {
+    background: #6a00f4;
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(106, 0, 244, 0.4);
+    transition: background transform 0.3s ease;
+  }
+
+  .rigistration-form button:hover {
+    transform: scale(1.1);
+    background: #0a50a5;
+  }
+  .rigistration-form p{
+    text-align: center;
+    font-size: small;
+    text-decoration: none;
+
+  }
+  .rigistration-form a{
+    text-decoration: none;
+  }
+
+  .rigistration-form .small-text {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #c50000;
+    margin-top: 2rem;
+  }
+
+  /* Responsive for small devices */
+  @media(max-width: 700px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-panel, .right-panel {
+      flex: none;
+      width: 100vw;
+      height: 50vh;
+    }
+    .left-panel {
+      padding-left: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  
+  <header class="navbar">
+    <!-- <img class="logo" src="logo.png" alt=""> -->
+     <h1> e-siksha</h1>
+    <nav>
+      <a href="#">Courses</a>
+      <a href="#">Notes</a>
+      <a href="#">About</a>
+      </nav>
+  </header>
+
+
+<div class="container">
+    <div class="right-panel">
+    <form class="rigistration-form" action="#" method="POST">
+      <h2>Welcome Back!</h2>
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Enter Username" name="username" required />
+        
+      <label for="email">E mail</label>
+      <input  id="email" type="text" placeholder="Enter E-mail" name="E mail" required/>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter Password" name="password" required />
+
+      <label for="confirm_password">Confirm Password</label>
+      <input id="confirm_password" type="password" placeholder="Confirm Password" name="confirm_password" required>
+
+      
+
+      <button type="submit">Rigister</button>
+      
+      <div class="small-text">
+        By logging in, you agree to our Terms and Privacy Policy.
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
